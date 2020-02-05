@@ -1,0 +1,38 @@
+algoritmo "ler_5_idades_calcular_medias"
+// Função :
+// Autor :  Meridiane
+// Data : 23/04/2018
+// 3. Ler dois números inteiros e imprimir todos os números pares entre eles.
+// Suponha que o segundo número é maior que o primeiro.
+var
+num1:inteiro
+num2:inteiro
+par: inteiro
+num: inteiro
+inicio
+// Seção de Comandos
+
+num1<-0
+num2<-0
+par<-0
+num<-0
+
+escreval("Digite o numero 1")
+leia(num1)
+
+escreval ("Digite o numero 2")
+leia(num2)
+
+para num de num1 ate num2 passo num+1 faca
+
+se (num mod 2 = 0) entao
+
+par<-num
+
+fimse
+
+escreval ("numero par entre o intervalo", par)
+
+fimpara
+
+fimalgoritmo

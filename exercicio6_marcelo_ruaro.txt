@@ -1,0 +1,31 @@
+algoritmo "NumerosPrimos"
+// Função : Verificar se um numero é primo ou não.
+// Autor : Eliel
+// Data : 09/03/2017
+// Seção de Declarações
+var
+numero, divisores, ndivisores :inteiro
+inicio
+
+escreval("digite um numero: ")
+leia(numero)
+
+
+para numero de divisores ate numero passo divisores+1 faca
+
+se ((numero mod divisores = 0) ou (numero mod divisores = 1))  entao
+
+primo<-numero
+
+escreval("numero primo")
+
+senao
+
+escreval("nao e primo")
+
+fimse
+
+fimpara
+
+
+fimalgoritmo

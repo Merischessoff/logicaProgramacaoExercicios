@@ -1,0 +1,38 @@
+algoritmo "numerosa impares no intervalo"
+// Função :
+// Autor :  Meridiane
+// Data : 23/04/2018
+// 4. Ler dois números inteiros e imprimir todos os números ímpares entre eles.
+// Suponha que o segundo é maior que o primeiro.
+var
+num1:inteiro
+num2:inteiro
+impar: inteiro
+num: inteiro
+inicio
+// Seção de Comandos
+
+num1<-0
+num2<-0
+impar<-0
+num<-0
+
+escreval("Digite o numero 1")
+leia(num1)
+
+escreval ("Digite o numero 2")
+leia(num2)
+
+para num de num2 ate num1 passo num-1 faca
+
+se (num mod 2 <> 0) entao
+
+impar<-num
+
+fimse
+
+escreval ("numero impar entre o intervalo", impar)
+
+fimpara
+
+fimalgoritmo

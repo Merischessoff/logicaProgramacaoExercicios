@@ -1,0 +1,27 @@
+algoritmo "Ler_numero_inteiro_soma_entre_todos_os_numeros_menores_que_ele"
+// Função :
+// Autor :  Meridiane
+// Data : 23/04/2018
+// 1. Ler um número inteiro maior que 0 e imprimir a soma entre todos os
+// números menores que o número lido até 0, desde que a soma não ultrapasse
+// 10 vezes o valor lido.
+var
+num: inteiro
+cont: inteiro
+soma: inteiro
+inicio
+// Seção de Comandos
+cont<-10
+soma<-0
+escreval("Digite um número inteiro e positivo")
+leia(num)
+
+para num de num ate cont passo -1 faca
+escreval("num", num)
+soma<-soma+num
+cont<-cont-1
+
+
+fimpara
+escreval("Soma dos intervalos", soma)
+fimalgoritmo

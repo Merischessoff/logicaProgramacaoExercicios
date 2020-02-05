@@ -1,0 +1,41 @@
+Resposta Exercício 1 - Maior e Menor
+Return to: Comando de Rep...
+      Algoritmo  maior_menor
+
+       Variáveis
+
+                    valor,maior,menor,cont: inteiro
+
+       inicio
+
+               escrever('informe  um valor')
+
+               ler(valor)
+
+               maior <- valor
+
+               menor <- valor
+
+               para cont <- 2 ate 50 faça 
+
+               inicio
+
+                     escrever('Informe um valor')
+
+                     ler(valor)
+
+                     se valor > maior então
+
+                           maior <- valor
+
+                      senão se valor < menor então
+
+                                   menor <- valor
+
+               fim
+
+               escrever('Maior:',maior)
+
+               escrever('Menor:',menor)
+
+       fim

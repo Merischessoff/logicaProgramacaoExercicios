@@ -1,0 +1,58 @@
+Algoritmo  par_valores
+
+
+       Variáveis
+
+
+                    x,y,soma,aux,c: inteiro
+
+
+       inicio
+
+
+                para cont ? 1 ate 30 faça
+
+
+                inicio                       
+
+
+                       escrever(’informe  um par de valores diferentes’)
+
+
+                       ler(x,y)
+
+
+                       se x > y então
+
+
+                       inicio
+
+
+                              aux ? x
+
+
+                              x ? y
+
+
+                              y ? aux
+
+
+                       fim
+
+
+                       soma ? 0
+
+
+                       para c ? x ate y faça
+
+
+                            soma ? soma + c
+
+
+                        escrever(‘Soma:’,soma)
+
+
+                fim
+
+
+       fim

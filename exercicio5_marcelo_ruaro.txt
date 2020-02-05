@@ -1,0 +1,32 @@
+algoritmo "ler numero inteiro escrever soma dos negativos"
+// Função :
+// Autor :  Meridiane
+// Data : 23/04/2018
+// 5. Ler um número inteiro e escrever o valor da soma de todos os números
+// digitados até o momento, até que seja digitado um número negativo.
+var
+
+num: inteiro
+soma: inteiro
+cont: inteiro
+
+inicio
+// Seção de Comandos
+
+num<-1
+soma<-0
+
+
+
+enquanto num> -1 faca
+
+escreval("Digite o numero")
+leia(num)
+
+soma<-soma+num
+
+fimenquanto
+
+escreval ("A soma dos numeros digitado e", soma)
+
+fimalgoritmo

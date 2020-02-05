@@ -1,0 +1,33 @@
+Algoritmodivisores_primos
+
+       Variáveis
+
+                  cont,valor,contd,d: inteiro
+
+       inicio
+
+                contd ? 0
+
+                para cont ? 1 ate 10 faça
+
+                inicio                       
+
+                       escrever('informe valor')
+
+                       ler(valor)
+
+                       para d ? 1 ate valor faça
+
+                             se valor mod d = 0 então
+
+                                   contd?contd + 1
+
+                             se contd = 2 então
+
+                                      escrever (valor,' é primo')
+
+                             senao(valor,' não é primo')                           
+
+                       fim
+
+       fim

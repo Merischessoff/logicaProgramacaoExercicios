@@ -1,0 +1,265 @@
+algoritmo "exercicio vetor 1"
+ 
+var
+
+a: vetor [1..6] de inteiro
+soma: inteiro
+i:inteiro
+
+inicio
+
+escreval("digite 6 valores 1, 0, 5, -2, -5, 7")
+
+para i de 1 ate 6 passo 1 faca
+     leia(a[i])
+     escreval("")
+fimpara
+
+soma<- a[2] + a[4] + a[5]
+
+escreval (" A soma é ", soma)
+
+a[4]<-100
+
+para i de 1 ate 6 passo 1 faca
+     escreval(" valores no vetor ", a[i])
+fimpara
+
+fimalgoritmo
+__________________________________________________________________________________
+
+
+algoritmo "exercicio vetor 2"
+ 
+var
+
+vet: vetor [1..10] de inteiro
+i:inteiro
+contpar:inteiro
+somavalor:inteiro
+maior:inteiro
+menor:inteiro
+posicme:inteiro
+posicma:inteiro
+
+inicio
+
+para i de 1 ate 10 passo 1 faca
+     vet[i]<-randi(100)
+fimpara
+
+para i de 1 ate 10 passo 1 faca
+     escreva(vet[i] )
+fimpara
+
+escreval("")
+
+para i de 1 ate 10 passo 1 faca
+     se vet[i] MOD 2 = 0 entao
+     escreval("É par ", vet[i])
+     contpar<-contpar+1
+     fimse
+fimpara
+
+para i de 1 ate 10 passo 1 faca
+     somavalor<-somavalor + vet[i]
+fimpara
+
+escreval("soma dos valores no vetor, ", somavalor)
+
+menor<-0
+maior<-0
+
+para i de 1 ate 10 passo 1 faca
+     se vet[i]< maior entao
+        menor<-vet[i]
+        posicme<-i
+     senao
+          maior<-vet[i]
+          posicma<-i
+     fimse
+fimpara
+     
+escreval("O maior valor e ", maior)
+escreval("sua posicao no vetor e ", posicma)
+escreval("O menor valor e ", menor)
+escreval("sua posicao no vetor e ", posicme)
+
+fimalgoritmo
+__________________________________________________________________________________
+
+algoritmo "exercicio matriz 1"
+ 
+var
+
+mat: vetor [1..4, 1..4] de inteiro
+l:inteiro
+c:inteiro
+cont:inteiro
+
+
+inicio
+
+para l de 1 ate 4 passo 1 faca
+     para c de 1 ate 4 passo 1 faca
+     mat[l,c]<-randi(100)
+     fimpara
+fimpara
+
+para l de 1 ate 4 passo 1 faca
+     para c de 1 ate 4 passo 1 faca
+     se mat[l,c] < 50 entao
+     cont<-cont+1
+     fimse
+     fimpara
+fimpara
+
+para l de 1 ate 4 passo 1 faca
+     para c de 1 ate 4 passo 1 faca
+     escreva(mat[l,c])
+     fimpara
+     escreval()
+fimpara
+
+escreva("Existem ", cont)
+escreva(" números menores que 50 na matriz")
+
+
+
+fimalgoritmo
+
+__________________________________________________________________________________
+
+algoritmo "exercicio matriz 2"
+ 
+var
+
+mat: vetor [1..5, 1..5] de inteiro
+l:inteiro
+c:inteiro
+
+
+inicio
+
+para l de 1 ate 5 passo 1 faca
+     para c de 1 ate 5 passo 1 faca
+     se l=c entao
+     mat[l,c]<- 1
+     senao
+     mat[l,c]<- 0
+     fimse
+     fimpara
+fimpara
+
+para l de 1 ate 5 passo 1 faca
+     para c de 1 ate 5 passo 1 faca
+     escreva(mat[l,c])
+     fimpara
+     escreval()
+fimpara
+
+
+fimalgoritmo
+
+__________________________________________________________________________________
+
+algoritmo "exercicio matriz 3"
+ 
+var
+
+mat1, mat2, mats: vetor [1..4, 1..4] de inteiro
+l:inteiro
+c:inteiro
+
+
+inicio
+
+para l de 1 ate 4 passo 1 faca
+     para c de 1 ate 4 passo 1 faca
+     mat1[l,c]<- randi(100)
+     fimpara
+fimpara
+
+escreval("Matriz 1")
+
+para l de 1 ate 4 passo 1 faca
+     para c de 1 ate 4 passo 1 faca
+     escreva(mat1[l,c])
+     fimpara
+     escreval()
+fimpara
+
+escreval()
+
+para l de 1 ate 4 passo 1 faca
+     para c de 1 ate 4 passo 1 faca
+     mat2[l,c]<- randi(100)
+     fimpara
+fimpara
+
+escreval("Matriz 2")
+
+para l de 1 ate 4 passo 1 faca
+     para c de 1 ate 4 passo 1 faca
+     escreva(mat2[l,c])
+     fimpara
+     escreval()
+fimpara
+
+para l de 1 ate 4 passo 1 faca
+     para c de 1 ate 4 passo 1 faca
+     mats[l,c]<-mat1[l,c]+ mat2[l,c]
+     fimpara
+fimpara
+
+escreval("Soma Matrizes ")
+
+para l de 1 ate 4 passo 1 faca
+     para c de 1 ate 4 passo 1 faca
+     escreva(mats[l,c])
+     fimpara
+     escreval()
+fimpara
+
+fimalgoritmo
+__________________________________________________________________________________
+
+algoritmo "exercicio matriz 4"
+ 
+var
+
+a: vetor [1..10, 1..10] de inteiro
+i:inteiro
+j:inteiro
+
+
+inicio
+
+
+para i de 1 ate 10 passo 1 faca
+
+     para j de 1 ate 10 passo 1 faca
+     leia(a[i,j])
+     fimpara
+     
+fimpara
+
+para i de 1 ate 10 passo 1 faca
+
+     para j de 1 ate 10 passo 1 faca
+          se i < j entao
+          escreva("2i + 8")
+          fimse
+          
+          se i = j entao
+          escreva("7i – 2j + 1")
+          fimse
+          
+          se i > j entao
+          escreva("4i * 5j + 9")
+          fimse
+          
+     fimpara
+     escreval("")
+fimpara
+fimalgoritmo

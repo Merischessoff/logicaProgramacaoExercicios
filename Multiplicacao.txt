@@ -1,0 +1,37 @@
+Algoritmo  Multiplicaçao
+
+
+       Variáveis
+
+
+                    valor,cont,mult: inteiro
+
+
+       inicio
+
+
+                mult <- 1
+
+
+                para cont de 1 ate 5 faça
+
+
+                inicio                       
+
+
+                       escrever("informe valor")
+
+
+                       ler(valor)
+
+
+                       mult <- mult  * valor
+
+
+                 fim
+
+
+                 escrever("A multiplicação é:",mult)
+
+
+       fim
